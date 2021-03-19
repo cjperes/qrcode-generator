@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Qrcode Etiqueta</title>
+</head>
+
+<body>
+
+
+	<form action="" method="post">
+		<input type="text" value="" id="url">
+	</form>
+
+	<div id="output"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.qrcode.min.js"></script>
+
+	<p>
+		Utilize o Qrcode abaixo.
+	</p>
+	<script>
+		jQuery(function () {
+			jQuery('#output').qrcode("https://bit.ly/use-etiqueta");
+		})
+	</script>
+
+</body>
+
+</html>
